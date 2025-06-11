@@ -4,39 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Vite App + Libraries for FE4</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <!--! PNotify core CSS -->
     <link rel="stylesheet" href="/node_modules/@pnotify/core/dist/PNotify.css" />
-    <!--! (необязательно) мобильная тема -->
+    <!--! PNotify mobile CSS - мобильная тема (необязательно) -->
     <link rel="stylesheet" href="/node_modules/@pnotify/mobile/dist/PNotifyMobile.css" />
-    
   </head>
   <body>
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+    
+    <h1 style="text-align: center;">Vite</h1>
+    
+    <!--! PNotify -->
+    <h3 style="text-align: center;">PNotify</h3>
+    <br>
+    <button id="btn-alert">alert from PNotify</button>
+    <br><br>
+    <button id="btn-notice">notice from PNotify</button>
+    <br><br>
+    <button id="btn-info">info from PNotify</button>
+    <br><br>
+    <button id="btn-success">success from PNotify</button>
+    <br><br>
+    <button id="btn-error">error from PNotify</button>
+    
+    
+    <!--! Chart.js -->
+    <h3 style="text-align: center;">Chart.js</h3>
+    <br>
+    <div style="width: 800px; margin: 0 auto 60px;"><canvas id="acquisitions"></canvas></div>
+    
+    
+    <!--! BasicLightBox -->
+    <h3 style="text-align: center;">Basic Light Box</h3>
+    <br>
+    <button id="btn-basic-light-box" style="margin: 0 auto 60px;">
+      Open image by BasicLightBox
+    </button>
 
-    Loads the specified .html file
-    <load ="partials/vite-promo.html" />
 
     <script type="module" src="./main.js"></script>
-    <!-- <script type="module">
-        import { alert, defaultModules } from 'node_modules/@pnotify/core/dist/PNotify.js';
-        import * as PNotifyMobile from 'node_modules/@pnotify/mobile/dist/PNotifyMobile.js';
-
-        console.log("JS-модуль: pnotify.js через NPM");
-
-        //? Инициализация мобильного модуля
-        defaultModules.set(PNotifyMobile, {});
-
-        //? Пример уведомления
-        alert({
-          text: 'Hello from PNotify!',
-          type: 'success'
-        });
-    </script> -->
   </body>
 </html>

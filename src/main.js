@@ -21,6 +21,7 @@
 //! ----------------------- OLD ------------------
 
 
+import './css/styles.css'
 //! ---------------------------------------------------------
 const myMessage = "Hello Vite + Java Script!"
 console.log("myMessage:", myMessage);

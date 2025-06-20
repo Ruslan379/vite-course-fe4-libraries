@@ -5,43 +5,48 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App + Libraries for FE4</title>
+    
+    <!--! Стилі підключені в main.js -->
+    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    
     <!--! PNotify core CSS -->
     <link rel="stylesheet" href="/node_modules/@pnotify/core/dist/PNotify.css" />
     <!--! PNotify mobile CSS - мобильная тема (необязательно) -->
     <link rel="stylesheet" href="/node_modules/@pnotify/mobile/dist/PNotifyMobile.css" />
   </head>
-  <body>
-    
-    <h1 style="text-align: center;">Vite</h1>
-    
-    <!--! PNotify -->
-    <h3 style="text-align: center;">PNotify</h3>
-    <br>
-    <button id="btn-alert">alert from PNotify</button>
-    <br><br>
-    <button id="btn-notice">notice from PNotify</button>
-    <br><br>
-    <button id="btn-info">info from PNotify</button>
-    <br><br>
-    <button id="btn-success">success from PNotify</button>
-    <br><br>
-    <button id="btn-error">error from PNotify</button>
-    
-    
-    <!--! Chart.js -->
-    <h3 style="text-align: center;">Chart.js</h3>
-    <br>
-    <div style="width: 800px; margin: 0 auto 60px;"><canvas id="acquisitions"></canvas></div>
-    
-    
-    <!--! BasicLightBox -->
-    <h3 style="text-align: center;">Basic Light Box</h3>
-    <br>
-    <button id="btn-basic-light-box" style="margin: 0 auto 60px;">
-      Open image by BasicLightBox
-    </button>
 
+  <body>
+    <!-- todo --------------------------- OLD ------------------------ -->
+    <!-- <div id="app"></div> -->
+    <!-- todo --------------------------------------------------------- -->
+
+    <!--! Урок-05 - приклад використання бібліотек в проєкті Vite -->
+    <div class="example">
+      <h1 style="text-align: center; margin-bottom: 15px;"><u>Бібліотекі в проєкті Vite</u></h1>
+    
+      <!--! PNotify -->
+      <h3 style="text-align: center;">PNotify</h3>
+      <div class="box-pnotify">
+        <button id="btn-alert"><b>alert</b> from PNotify</button>
+        <button id="btn-notice"><b>notice</b> from PNotify</button>
+        <button id="btn-info"><b>info</b> from PNotify</button>
+        <button id="btn-success"><b>success</b> from PNotify</button>
+        <button id="btn-error"><b>error</b> from PNotify</button>
+      </div>
+    
+      <!--! Chart.js -->
+      <h3 style="text-align: center;">Chart.js</h3>
+      <br>
+      <div style="width: 800px; margin: 0 auto 20px;"><canvas id="acquisitions"></canvas></div>
+    
+      <!--! BasicLightBox -->
+      <h3 style="text-align: center;">Basic Light Box</h3>
+      <br>
+      <button id="btn-basic-light-box">
+        Open image by BasicLightBox
+      </button>
+    </div>
 
     <script type="module" src="./main.js"></script>
   </body>

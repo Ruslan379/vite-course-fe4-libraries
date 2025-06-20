@@ -1,32 +1,38 @@
-//! ----------------------- OLD ------------------
-// //! PNotify
-// // todo:- Документація через NPM
-// // import { alert, defaultModules } from '@pnotify/core/dist/PNotify.js';
-// // import * as PNotifyMobile from '@pnotify/mobile/dist/PNotifyMobile.js';
+//todo --------------------------- OLD ------------------------
+// import './style.css'
+// import javascriptLogo from './javascript.svg'
+// // import viteLogo from '/vite.svg'
+// import viteLogo from '../public/vite.svg'
+// import { setupCounter } from './counter.js'
 
-// // todo:- ChatGPT через NPM
-// import { alert, defaultModules } from '@pnotify/core';
-// import * as PNotifyMobile from '@pnotify/mobile';
+// document.querySelector('#app').innerHTML = `
+//   <div>
+//     <a href="https://vite.dev" target="_blank">
+//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
+//     </a>
+//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+//     </a>
+//     <h1>Hello Vite!</h1>
+//     <div class="card">
+//       <button id="counter" type="button"></button>
+//     </div>
+//     <p class="read-the-docs">
+//       Click on the Vite logo to learn more
+//     </p>
+//   </div>
+// `
 
-// console.log("JS-модуль:  main.js через NPM");
-
-// //? Инициализация мобильного модуля
-// defaultModules.set(PNotifyMobile, {});
-
-// //? Пример уведомления
-// alert({
-//     text: 'Hello from PNotify!',
-//     type: 'success'
-// });
-//! ----------------------- OLD ------------------
+// setupCounter(document.querySelector('#counter'))
+//todo ---------------------------------------------------------
 
 
+
+//! Урок-05 - приклад використання бібліотек в проєкті Vite
+import './css/reset.css'
 import './css/styles.css'
-//! ---------------------------------------------------------
 const myMessage = "Hello Vite + Java Script!"
 console.log("myMessage:", myMessage);
-
-
 
 //! Lodash
 console.warn("Бібліотека Lodash:");
@@ -204,4 +210,3 @@ const instance2 = basicLightbox.create(html, {
 });
 
 // instance2.show();
-

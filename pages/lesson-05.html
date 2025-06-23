@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite-course-fe4-libraries/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-05 (PNotify, Chart.js, BasicLightBox) </title>
+    
+    <!--! Стилі підключені в lesson-05.js -->
+    <!-- <link rel="stylesheet" href="../css/lesson-05.css" /> -->
+    
+    <!--! PNotify core CSS -->
+    <link rel="stylesheet" href="/node_modules/@pnotify/core/dist/PNotify.css" />
+    <!--! PNotify mobile CSS - мобильнатема (необов'язково) -->
+    <link rel="stylesheet" href="/node_modules/@pnotify/mobile/dist/PNotifyMobile.css" />
+    <script type="module" crossorigin src="/vite-course-fe4-libraries/assets/lesson-05-C_c6HXD_.js"></script>
+    <link rel="modulepreload" crossorigin href="/vite-course-fe4-libraries/assets/reset-CdHmiPVj.js">
+    <link rel="stylesheet" crossorigin href="/vite-course-fe4-libraries/assets/reset-OaYU_GFB.css">
+    <link rel="stylesheet" crossorigin href="/vite-course-fe4-libraries/assets/lesson-05-Dp_OJ8VL.css">
+  </head>
+
+  <body>
+    <!--! Урок-05 - приклад використання бібліотек PNotify, Chart.js, BasicLightBox в проєкті Vite -->
+    <div class="box">
+      <h1 class="title">Бібліотекі PNotify, Chart.js, BasicLightBox</h1>
+      <a class="main-page-link" href="../index.html">На головну сторінку</a>
+      <!--! PNotify -->
+      <h2 style="text-align: center;">PNotify</h2>
+      <div class="box-pnotify">
+        <button id="btn-alert"><b>alert</b> from PNotify</button>
+        <button id="btn-notice"><b>notice</b> from PNotify</button>
+        <button id="btn-info"><b>info</b> from PNotify</button>
+        <button id="btn-success"><b>success</b> from PNotify</button>
+        <button id="btn-error"><b>error</b> from PNotify</button>
+      </div>
+    
+      <!--! Chart.js -->
+      <h2 style="text-align: center;">Chart.js</h2>
+      <br>
+      <div style="width: 800px; margin: 0 auto 20px;"><canvas id="acquisitions"></canvas></div>
+    
+      <!--! BasicLightBox -->
+      <h2 style="text-align: center;">Basic Light Box</h2>
+      <br>
+      <button id="btn-basic-light-box">
+        Open image by BasicLightBox
+      </button>
+    </div>
+
+    <!--! Підключення скриптів -->
+    <!--? Робочий скрипт -->
+  </body>
+</html>

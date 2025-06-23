@@ -38,8 +38,12 @@ body {
 
 /*? ------------------------------------------------------------------- */
 /*todo: var.1: Використання vite-plugin-handlebars лише у index.html */
-.handlebars-var01 {
-  margin: 0 auto;
+/*todo: todo: var.2 Приклад використання Handlebars з конспекту */
+/*todo: var.3 Використання Handlebars вручну (без Vite-плагіну) */
+.handlebars-var01,
+#menu-container,
+.handlebars-var03{
+  margin: 0 auto 30px;
   padding: 20px;
   width: 40%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -48,8 +52,9 @@ body {
   outline: 1px solid brown;
 }
 
-.handlebars-var01 h3 {
-  font-size: 2em;
+.handlebars-var01 h3,
+#menu-container h3,
+.handlebars-var03 h3 {
+  font-size: 1.8em;
   text-align: center;
 }
-

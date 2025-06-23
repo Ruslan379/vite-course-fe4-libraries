@@ -21,6 +21,8 @@ export default defineConfig({
       input: glob.sync('./src/**/*.html'),
     },
     outDir: '../dist',
+    //todo: var.3 Використання Handlebars вручну (без Vite-плагіну)
+    emptyOutDir: true,
   },
   plugins: [
     injectHTML(),

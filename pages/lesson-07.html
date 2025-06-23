@@ -7,7 +7,7 @@
     <title>Lesson-07 (Handlebars) </title>
     
     <!--! Стилі підключені в lesson-07.js -->
-    <script type="module" crossorigin src="/vite-course-fe4-libraries/assets/lesson-07-BkJwvbhX.js"></script>
+    <script type="module" crossorigin src="/vite-course-fe4-libraries/assets/lesson-07-DqMm4cuX.js"></script>
     <link rel="modulepreload" crossorigin href="/vite-course-fe4-libraries/assets/reset-CdHmiPVj.js">
     <link rel="modulepreload" crossorigin href="/vite-course-fe4-libraries/assets/_commonjsHelpers-Cpj98o6Y.js">
     <link rel="stylesheet" crossorigin href="/vite-course-fe4-libraries/assets/reset-OaYU_GFB.css">
@@ -24,8 +24,11 @@
       <!--todo: var.1 Використання vite-plugin-handlebars лише у index.html -->
       <h2>var.1: Використання vite-plugin-handlebars лише у index.html</h2>
       <div class="handlebars-var01">
-        <h3></h3>
+        <h3>{{title}}</h3>
         <ul>
+          {{#each items}}
+          <li>{{this}}</li>
+          {{/each}}
         </ul>
       </div>
 
@@ -37,8 +40,11 @@
       <!--? Вміст всередині тега <template> не відображається в DOM -->
       <template id="menu-template">
         <div class="menu">
-          <h3 class="menu-title"></h3>
+          <h3 class="menu-title">{{title}}</h3>
           <ul class="menu-list">
+            {{#each items}}
+            <li class="menu-item">{{this}}</li>
+            {{/each}}
           </ul>
         </div>
       </template>

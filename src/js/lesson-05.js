@@ -1,5 +1,6 @@
-
 //! Урок-05 - приклад використання бібліотек PNotify, Chart.js, BasicLightBox в проєкті Vite
+console.log("Підключено скрипт lesson-05.js");
+
 import '../css/reset.css'
 import '../css/lesson-05.css'
 
@@ -8,8 +9,6 @@ console.log(
     "color: white; background-color: #D33F49",
 );
 
-// const myMessage = "Hello Vite + Java Script!"
-// console.log("myMessage:", myMessage);
 
 //! Lodash
 console.warn("Бібліотека Lodash:");
@@ -53,16 +52,14 @@ console.warn("Бібліотека PNotify:");
 import { alert, notice, info, success, error, defaultModules } from '@pnotify/core';
 import * as PNotifyMobile from '@pnotify/mobile';
 import '@pnotify/core/dist/BrightTheme.css';
-console.log("Hello Vite! --> main.js");
-
-//todo Подключаем мобильный модуль (опционально)
+//todo: Підключаємо мобільний модуль (опціонально).
 defaultModules.set(PNotifyMobile, {});
 
 //todo: 1.Просте повідомлення 
 const btnAlert = document.getElementById('btn-alert');
 btnAlert.addEventListener('click', () => {
     alert({
-        text: 'Привет из PNotify + Vite!',
+        text: 'Привітання из PNotify + Vite!',
         width: '500px',
         // type: 'notice',
         // type: 'info',

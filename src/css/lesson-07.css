@@ -1,6 +1,6 @@
 /*! Урок-07 - приклад використання бібліотеки Handlebars в проєкті Vite */
 body {
-  background-color: aquamarine;
+  background-color: #bdffe9;
 }
 
 .box {
@@ -8,10 +8,30 @@ body {
   width: 80%;
   height: 100%;
   /* background-color: #ffebe0; */
-  outline: 2px solid brown;
+  /* outline: 1px solid brown; */
 }
 
-.title {
+.box-title {
   margin: 20px 0;
   text-align: center;
 }
+
+.box-main-page-link {
+  display: inline-block;
+  padding: 4px 8px;
+  font-weight: 700;
+  border: 1px solid darkblue;
+  border-radius: 4px;
+}
+
+.box-main-page-link:hover {
+  color: darkred;
+  border-color: darkred;
+  background-color: #ff9d9d;
+}
+
+.box h2 {
+  text-align: center;
+  color: #603209;
+}
+

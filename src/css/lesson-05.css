@@ -1,19 +1,38 @@
 /*! Урок-05 - приклад використання бібліотек PNotify, Chart.js, BasicLightBox в проєкті Vite */
 body {
-  background-color: blanchedalmond;
+  background-color: #fff0d9;
 }
 
 .box {
   margin: 0 auto;
   width: 80%;
   height: 100%;
-  background-color: #ffebe0;
-  /* outline: 2px solid brown; */
+  /* background-color: #ffebe0; */
+  /* outline: 1px solid brown; */
 }
 
-.title {
+.box-title {
   margin: 20px 0;
   text-align: center;
+}
+
+.box-main-page-link {
+  display: inline-block;
+  padding: 4px 8px;
+  font-weight: 700;
+  border: 1px solid darkblue;
+  border-radius: 4px;
+}
+
+.box-main-page-link:hover {
+  color: darkred;
+  border-color: darkred;
+  background-color: #ff9d9d;
+}
+
+.box h2 {
+  text-align: center;
+  color: #603209;
 }
 
 .box-pnotify {
@@ -23,7 +42,6 @@ body {
   justify-content: center;
   gap: 20px;
   /* outline: auto; */
-
 }
 
 button {

@@ -8,10 +8,23 @@ body {
   width: 80%;
   height: 100%;
   /* background-color: #ffebe0; */
-  outline: 2px solid brown;
+  /* outline: 2px solid brown; */
 }
 
-.title {
-  margin: 20px 0;
+.box-title {
+  margin: 150px 0 40px;
+  font-size: 40px;
   text-align: center;
+}
+
+.box-list {
+  display: grid;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #9727ff;
+}
+
+.box-list li:hover{
+  color: #b26eff;
 }

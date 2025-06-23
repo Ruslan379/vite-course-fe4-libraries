@@ -52,6 +52,5 @@ export default defineConfig({
         items: ['Про нас', 'Контакти', 'Послуги']
       }
     })
-
   ],
 });

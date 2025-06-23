@@ -7,17 +7,32 @@
     <title>Lesson-07 (Handlebars) </title>
     
     <!--! Стилі підключені в lesson-07.js -->
-    <!-- <link rel="stylesheet" href="../css/lesson-07.css" /> -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/lesson-07.css" />
   </head>
 
   <body>
     <!--! Урок-07 - приклад використання бібліотеки Handlebars в проєкті Vite -->
     <div class="box">
       <h1 class="box-title">Бібліотека Handlebars</h1>
-      <a class="box-main-page-link" href="../index.html">На головну сторінку</a>
+      <a class="box-main-page-link" href="../index.html">⬅️ На головну сторінку</a>
 
-      <div id="menu-container"></div>
-      
+
+      <!--todo: var.1 Використання vite-plugin-handlebars лише у index.html -->
+      <h2>var.1: Використання vite-plugin-handlebars лише у index.html</h2>
+      <div class="handlebars-var01">
+        <h3>{{title}}</h3>
+        <ul>
+          {{#each items}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+
+      <!--todo: var.2: Конспект -->
+      <!-- <div id="menu-container"></div>
+
       <template id="menu-template">
         <div class="menu">
           <h3 class="menu-title">{{title}}</h3>
@@ -27,11 +42,12 @@
             {{/each}}
           </ul>
         </div>
-      </template>
+      </template> -->
+
     </div>
 
     <!--! Підключення скриптів -->
     <!--? Робочий скрипт -->
-    <script type="module" src="../js/lesson-07.js"></script>
+    <!-- <script type="module" src="../js/lesson-07.js"></script> -->
   </body>
 </html>

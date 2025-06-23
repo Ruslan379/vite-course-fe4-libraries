@@ -33,6 +33,7 @@ body {
 .box h2 {
   text-align: center;
   color: #603209;
+  text-decoration: underline;
 }
 
 .box-pnotify {

@@ -11,13 +11,18 @@ console.log(
 
 //! Handlebars
 console.warn("Бібліотека Handlebars:");
+import Handlebars from 'handlebars/runtime';
+// import template from './template.hbs';
+import template from '../handlebars/template.hbs';
+
+
 const menuData = {
     title: 'Eat it createElement, templates rule!',
     items: ['Handlebars', 'LoDash', 'Pug', 'EJS', 'lit-html']
 };
 
-const source = document.querySelector('#menu-template').innerHTML.trim();
-const template = Handlebars.compile(source);
+// const source = document.querySelector('#menu-template').innerHTML.trim();
+// const template = Handlebars.compile(source);
 
 /*
   Создадим переменную markup, в которую запишем 

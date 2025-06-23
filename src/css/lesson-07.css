@@ -33,5 +33,23 @@ body {
 .box h2 {
   text-align: center;
   color: #603209;
+  text-decoration: underline;
+}
+
+/*? ------------------------------------------------------------------- */
+/*todo: var.1: Використання vite-plugin-handlebars лише у index.html */
+.handlebars-var01 {
+  margin: 0 auto;
+  padding: 20px;
+  width: 40%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #963f00;
+  /* background-color: #ffebe0; */
+  outline: 1px solid brown;
+}
+
+.handlebars-var01 h3 {
+  font-size: 2em;
+  text-align: center;
 }
 

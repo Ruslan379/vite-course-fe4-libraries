@@ -3,8 +3,8 @@ import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 //! Бібліотека Handlebars
-import handlebars from 'vite-plugin-handlebars';
-import { resolve } from 'path';
+// import handlebars from 'vite-plugin-handlebars';
+// import { resolve } from 'path';
 
 // export default defineConfig({
 //   plugins: [handlebars()],
@@ -22,7 +22,7 @@ export default defineConfig({
     },
     outDir: '../dist',
     //todo: var.3 Використання Handlebars вручну (без Vite-плагіну)
-    emptyOutDir: true,
+    // emptyOutDir: true,
   },
   plugins: [
     injectHTML(),

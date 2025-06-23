@@ -8,7 +8,7 @@
     
     <!--! Стилі підключені в lesson-07.js -->
     <!-- <link rel="stylesheet" href="../css/lesson-07.css" /> -->
-    <script type="module" crossorigin src="/vite-course-fe4-libraries/assets/lesson-07-DNyjULJg.js"></script>
+    <script type="module" crossorigin src="/vite-course-fe4-libraries/assets/lesson-07-BveM2a7c.js"></script>
     <link rel="modulepreload" crossorigin href="/vite-course-fe4-libraries/assets/reset-CdHmiPVj.js">
     <link rel="stylesheet" crossorigin href="/vite-course-fe4-libraries/assets/reset-OaYU_GFB.css">
     <link rel="stylesheet" crossorigin href="/vite-course-fe4-libraries/assets/lesson-07-CArIalEe.css">
@@ -20,6 +20,18 @@
       <h1 class="box-title">Бібліотека Handlebars</h1>
       <a class="box-main-page-link" href="../index.html">На головну сторінку</a>
 
+      <div id="menu-container"></div>
+      
+      <template id="menu-template">
+        <div class="menu">
+          <h3 class="menu-title">{{title}}</h3>
+          <ul class="menu-list">
+            {{#each items}}
+            <li class="menu-item">{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </template>
     </div>
 
     <!--! Підключення скриптів -->

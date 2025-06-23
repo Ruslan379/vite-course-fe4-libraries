@@ -9,6 +9,7 @@ console.log(
     "color: white; background-color: #D33F49",
 );
 
+
 //! Handlebars
 console.warn("Бібліотека Handlebars:");
 //! var.2 Приклад використання Handlebars з конспекту
@@ -40,6 +41,7 @@ console.log(markup2); //? Вся розмітка
 
 const menuСontainer = document.querySelector('#menu-container');
 menuСontainer.innerHTML = markup2;
+//! ______________________________________________________________________________
 
 
 
@@ -66,7 +68,6 @@ async function renderTemplate() {
 };
 
 renderTemplate();
-
 //! ______________________________________________________________________________
 
 

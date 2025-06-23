@@ -30,9 +30,9 @@ export default defineConfig({
     //! Бібліотека Handlebars
     // handlebars()
 
-    handlebars({
-      partialDirectory: resolve(__dirname, 'src/handlebars')
-    })
+    // handlebars({
+    //   partialDirectory: resolve(__dirname, 'src/handlebars')
+    // })
 
     // handlebars({
     //   include: '**/*.hbs',

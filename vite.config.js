@@ -3,8 +3,8 @@ import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 //! Бібліотека Handlebars
-// import handlebars from 'vite-plugin-handlebars';
-// import { resolve } from 'path';
+import handlebars from 'vite-plugin-handlebars';
+import { resolve } from 'path';
 
 // export default defineConfig({
 //   plugins: [handlebars()],
@@ -30,9 +30,9 @@ export default defineConfig({
     //! Бібліотека Handlebars
     // handlebars()
 
-    // handlebars({
-    //   partialDirectory: resolve(__dirname, 'src/handlebars')
-    // })
+    handlebars({
+      partialDirectory: resolve(__dirname, 'src/handlebars')
+    })
 
     // handlebars({
     //   include: '**/*.hbs',

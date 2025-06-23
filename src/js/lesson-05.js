@@ -159,6 +159,7 @@ import Chart from 'chart.js/auto'
 
 
 //! Basiclightbox
+console.warn("Бібліотека Basiclightbox:");
 import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
 

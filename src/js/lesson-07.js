@@ -13,7 +13,7 @@ console.log(
 
 //! Handlebars
 // //! var.2 Приклад використання Handlebars з конспекту
-// console.warn("var.2 Приклад використання Handlebars з конспекту:");
+console.warn("var.2 Приклад використання Handlebars з конспекту:");
 // import Handlebars from 'handlebars';
 
 // const menuData2 = {
@@ -52,24 +52,24 @@ console.log(
 console.warn("var.3 Використання Handlebars вручну (без Vite-плагіну):");
 // import Handlebars from 'handlebars';
 
-const menuData3 = {
-    title: '3.Eat it createElement, templates rule!',
-    items: ['Handlebars-3', 'LoDash-3', 'Pug-3', 'EJS-3', 'lit-html-3'],
-};
-const containerHandlebars03 = document.querySelector(".handlebars-var03");
-console.log("containerHandlebars03:", containerHandlebars03 );
+// const menuData3 = {
+//     title: '3.Eat it createElement, templates rule!',
+//     items: ['Handlebars-3', 'LoDash-3', 'Pug-3', 'EJS-3', 'lit-html-3'],
+// };
+// const containerHandlebars03 = document.querySelector(".handlebars-var03");
+// console.log("containerHandlebars03:", containerHandlebars03 );
 
-async function renderTemplate() {
-    const res = await fetch('../handlebars/template.hbs');
-    const templateText = await res.text();
+// async function renderTemplate() {
+//     const res = await fetch('../handlebars/template.hbs');
+//     const templateText = await res.text();
 
-    const template = Handlebars.compile(templateText);
-    const renderedHTML = template(menuData3);
+//     const template = Handlebars.compile(templateText);
+//     const renderedHTML = template(menuData3);
 
-    containerHandlebars03.innerHTML = renderedHTML;
-};
+//     containerHandlebars03.innerHTML = renderedHTML;
+// };
 
-renderTemplate();
+// renderTemplate();
 //! ______________________________________________________________________________
 
 

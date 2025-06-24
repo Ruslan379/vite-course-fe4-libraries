@@ -1,8 +1,9 @@
 //! Урок-07 - приклад використання бібліотеки Handlebars в проєкті Vite
 console.log("Підключено скрипт lesson-07.js");
 
-// import '../css/reset.css'
-// import '../css/lesson-07.css'
+import '../css/reset.css'
+import '../css/lesson-07.css'
+import Handlebars from 'handlebars';
 
 console.log(
     "%c LESSON-07 - Використання бібліотеки Handlebars ",
@@ -49,7 +50,7 @@ console.log(
 
 //!: var.3 Використання Handlebars вручну (без Vite-плагіну)
 console.warn("var.3 Використання Handlebars вручну (без Vite-плагіну):");
-import Handlebars from 'handlebars';
+// import Handlebars from 'handlebars';
 
 const menuData3 = {
     title: '3.Eat it createElement, templates rule!',

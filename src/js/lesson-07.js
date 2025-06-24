@@ -11,9 +11,9 @@ console.log(
 
 
 // //! Handlebars
-// console.warn("Бібліотека Handlebars:");
+console.warn("Бібліотека Handlebars:");
 // //! var.2 Приклад використання Handlebars з конспекту
-// import Handlebars from 'handlebars';
+import Handlebars from 'handlebars';
 
 // const menuData2 = {
 //     title: '2.Eat it createElement, templates rule!',

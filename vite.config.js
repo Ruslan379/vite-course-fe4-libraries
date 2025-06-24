@@ -22,7 +22,7 @@ export default defineConfig({
     },
     outDir: '../dist',
     //todo: var.3 Використання Handlebars вручну (без Vite-плагіну)
-    // emptyOutDir: true,
+    emptyOutDir: true,
   },
   plugins: [
     injectHTML(),

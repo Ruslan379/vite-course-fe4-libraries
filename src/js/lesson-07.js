@@ -15,32 +15,32 @@ console.log(
 console.warn("var.2 Приклад використання Handlebars з конспекту:");
 import Handlebars from 'handlebars';
 
-const menuData2 = {
-    title: '2.Eat it createElement, templates rule!',
-    items: ['Handlebars-2', 'LoDash-2', 'Pug-2', 'EJS-2', 'lit-html-2']
-};
+// const menuData2 = {
+//     title: '2.Eat it createElement, templates rule!',
+//     items: ['Handlebars-2', 'LoDash-2', 'Pug-2', 'EJS-2', 'lit-html-2']
+// };
 
-const source = document.querySelector('#menu-template').innerHTML.trim();
-const template2 = Handlebars.compile(source);
+// const source = document.querySelector('#menu-template').innerHTML.trim();
+// const template2 = Handlebars.compile(source);
 
-//? Створимо змінну markup, в яку запишемо 
-//? результат роботи функції-шаблону template.
-const markup2 = template2(menuData2);
+// //? Створимо змінну markup, в яку запишемо 
+// //? результат роботи функції-шаблону template.
+// const markup2 = template2(menuData2);
 
-console.log("Вся розмітка: \n", markup2); //? Вся розмітка
+// console.log("Вся розмітка: \n", markup2); //? Вся розмітка
 
-//? Приклад вище схожий на операцію «пошук-і заміна»: шаблон просто
-//? замінив {{title}} значення властивості menuData.title.
-//? Після чого результат потрапив спочатку текст <ul>,
-//? потім виконався {{#each items}}, який послідовно
-//? згенерував елементи списку, а потім список був закритий </ul>.
+// //? Приклад вище схожий на операцію «пошук-і заміна»: шаблон просто
+// //? замінив {{title}} значення властивості menuData.title.
+// //? Після чого результат потрапив спочатку текст <ul>,
+// //? потім виконався {{#each items}}, який послідовно
+// //? згенерував елементи списку, а потім список був закритий </ul>.
 
 
-//? У js виберемо контейнер по id, після чого використовуючи 
-//? властивість innerHTML додємо туди наш рядок.
+// //? У js виберемо контейнер по id, після чого використовуючи 
+// //? властивість innerHTML додємо туди наш рядок.
 
-const menuСontainer = document.querySelector('#menu-container');
-menuСontainer.innerHTML = markup2;
+// const menuСontainer = document.querySelector('#menu-container');
+// menuСontainer.innerHTML = markup2;
 //! ______________________________________________________________________________
 
 

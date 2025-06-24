@@ -1,8 +1,8 @@
 //! Урок-07 - приклад використання бібліотеки Handlebars в проєкті Vite
 console.log("Підключено скрипт lesson-07.js");
 
-import '../css/reset.css'
-import '../css/lesson-07.css'
+// import '../css/reset.css'
+// import '../css/lesson-07.css'
 import Handlebars from 'handlebars';
 
 console.log(

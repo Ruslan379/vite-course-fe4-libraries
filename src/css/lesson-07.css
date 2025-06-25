@@ -40,9 +40,11 @@ body {
 /*todo: var.1: Використання vite-plugin-handlebars лише у index.html */
 /*todo: todo: var.2 Приклад використання Handlebars з конспекту */
 /*todo: var.3 Використання Handlebars вручну (без Vite-плагіну) */
+/*todo: var.4 Використання Handlebars (ChatGPT + Михайло Шпег) */
 .handlebars-var01,
 #menu-container,
-.handlebars-var03{
+.handlebars-var03,
+.handlebars-var04 {
   margin: 0 auto 30px;
   padding: 20px;
   width: 40%;
@@ -54,7 +56,8 @@ body {
 
 .handlebars-var01 h3,
 #menu-container h3,
-.handlebars-var03 h3 {
+.handlebars-var03 h3,
+.handlebars-var04 h3 {
   font-size: 1.8em;
   text-align: center;
 }

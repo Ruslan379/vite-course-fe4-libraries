@@ -3,7 +3,7 @@ console.log("Підключено скрипт lesson-07.js");
 
 // import '../css/reset.css'
 // import '../css/lesson-07.css'
-import Handlebars from 'handlebars';
+
 
 console.log(
     "%c LESSON-07 - Використання бібліотеки Handlebars ",
@@ -74,4 +74,23 @@ console.warn("var.3 Використання Handlebars вручну (без Vit
 
 
 
+//!: var.4 Використання Handlebars (ChatGPT + Михайло Шпег)
+console.warn("var.4 Використання Handlebars (ChatGPT + Михайло Шпег):");
+// import Handlebars from "handlebars";
+// import userCardTemplate from "../handlebars/template-4.hbs?raw";
 
+// const template = Handlebars.compile(userCardTemplate);
+// // console.log(template);
+
+// const data = {
+//     name: "Марія",
+//     age: 24,
+//     isAdmin: true
+// };
+
+// const containerHandlebars04 = document.querySelector(".handlebars-var04");
+// console.log("containerHandlebars04:", containerHandlebars04);
+
+// const html = template(data);
+// console.log(html);
+// containerHandlebars04.innerHTML = html;

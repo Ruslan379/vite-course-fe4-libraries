@@ -3,12 +3,9 @@ import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 //! Бібліотека Handlebars
-// import handlebars from 'vite-plugin-handlebars';
+import handlebars from 'vite-plugin-handlebars';
 // import { resolve } from 'path';
 
-// export default defineConfig({
-//   plugins: [handlebars()],
-// });
 
 export default defineConfig({
   base: '/vite-course-fe4-libraries/', //! 👈 ВАЖЛИВО: вкажіть базу
@@ -46,11 +43,11 @@ export default defineConfig({
     // })
 
     //todo: var.1: Використання vite-plugin-handlebars лише у index.html
-    // handlebars({
-    //   context: {
-    //     title: 'Головна сторінка',
-    //     items: ['Про нас', 'Контакти', 'Послуги']
-    //   }
-    // })
+    handlebars({
+      context: {
+        title: 'Головна сторінка',
+        items: ['Про нас', 'Контакти', 'Послуги']
+      }
+    })
   ],
 });
